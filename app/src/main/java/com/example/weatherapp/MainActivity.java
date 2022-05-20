@@ -22,7 +22,8 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
-    private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&APPID=e2e6c876e9d11cff5d32a04d7c908f00&lang=ru&units=metric";
+    private final String APPID = "4a2180cc176960d45b97c3b3912454c8";
+    private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&lang=ru&units=metric&APPID=" + APPID;
     private TextView textViewWeather;
     private EditText editTextCity;
 
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     String city = jsonObject.getString("name");
                     String temp = jsonObject.getJSONObject("main").getString("temp");
                     String description = jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
-                    String weather = String.format("%s\nТемпература: %s\nНа улице: %s", city, temp, description);
+                    String weather = String.format("%s\nтемпература: %s\n", city, temp, description);
                     textViewWeather.setText(weather);
                 } catch (JSONException e) {
                     e.printStackTrace();
