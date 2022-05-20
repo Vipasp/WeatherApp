@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
-            if (s == null) {
+            if (s.isEmpty()) {
                 textViewWeather.setText("Город не найден");
             } else {
                 super.onPostExecute(s);
