@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private final String APPID = "demo"; //API ключ получаем после регистрации на openweathermap.org
     private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&lang=ru&units=metric&APPID=" + APPID;
     //синтаксис берем из документации разработчика openweathermap
-    // Забанили РФ, с 20.05.2022 нужен VPN!
+    // для РФ с 20.05.2022 нужен VPN!
     private TextView textViewWeather; //объявляем наши поля для отображения погоды
     private EditText editTextCity; //город или индекс
 
