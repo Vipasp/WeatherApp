@@ -27,7 +27,7 @@ import java.net.URL; //Обработка URL (унифицированный у
 import javax.net.ssl.HttpsURLConnection; //забираем JSON по SSL
 
 public class MainActivity extends AppCompatActivity {
-    private final String APPID = "4a2180cc176960d45b97c3b3912454c8"; //API ключ получаем после регистрации в openweathermap.org
+    private final String APPID = "4a2180cc176960d45b97c3b3912454c8"; //API ключ получаем после регистрации на openweathermap.org
     private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&lang=ru&units=metric&APPID=" + APPID;
     //синтаксис берем из документации разработчика openweathermap
     // Забанили РФ, с 20.05.2022 нужен VPN!
