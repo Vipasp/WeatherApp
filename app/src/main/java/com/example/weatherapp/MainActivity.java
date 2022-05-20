@@ -22,7 +22,7 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
-    private final String APPID = "";
+    private final String APPID = "demo";
     private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&lang=ru&units=metric&APPID=" + APPID;
     private TextView textViewWeather;
     private EditText editTextCity;

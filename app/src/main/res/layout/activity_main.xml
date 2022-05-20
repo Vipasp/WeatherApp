@@ -16,24 +16,28 @@
         android:ems="10"
         android:hint="@string/input_city"
         android:inputType="textPersonName"
+
         android:minHeight="48dp"
         android:padding="8dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonShowWeather"
-        style="@android:style/Widget.DeviceDefault.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="20dp"
+        android:background="#324AD5"
         android:onClick="onClickShowWeather"
         android:text="@string/show_weather"
         android:textColor="#CFD8DC"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCity" />
 
@@ -42,7 +46,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
